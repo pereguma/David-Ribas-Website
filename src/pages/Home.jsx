@@ -17,6 +17,9 @@ export default function Home() {
                     <p className="text-xl md:text-2xl text-gray-600 font-light">
                         Pintor i creador visual contemporani.
                     </p>
+                    <p className="text-xs tracking-[0.2em] uppercase text-gray-400">
+                        Nota de prova: web actualitzada des de l'escriptori.
+                    </p>
                 </div>
                 <a
                     href="/obres"
