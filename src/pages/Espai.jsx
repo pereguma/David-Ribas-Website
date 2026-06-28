@@ -5,18 +5,9 @@ export default function Espai() {
         { src: '/Espai/Espai1.jpg', alt: 'Espai David Ribas 1' },
         { src: '/Espai/Espai2.jpg', alt: 'Espai David Ribas 2' },
         { src: '/Espai/Espai3.jpg', alt: 'Espai David Ribas 3' },
-        { src: '/Espai/Habitacio3.jpg', alt: 'Espai David Ribas 4' },
-        { src: '/Espai/Habitacio4.jpg', alt: 'Espai David Ribas 5' },
-        { src: '/Espai/Habitacio5.jpg', alt: 'Espai David Ribas 6' },
-        { src: '/Espai/Habitacio6.jpg', alt: 'Espai David Ribas 7' },
+        { src: '/Espai/Espai4.jpg', alt: 'Espai David Ribas 4' },
         { src: '/Espai/Espai5.jpg', alt: 'Espai David Ribas 8' },
         { src: '/Espai/Espai6.jpg', alt: 'Espai David Ribas 9' },
-    ];
-
-    const habitacioImages = [
-        { src: '/Espai/Habitacio1.jpg', alt: 'Antigua habitació HD Riudebitlles 1' },
-        { src: '/Espai/Habitacio7.jpg', alt: 'Antigua habitació HD Riudebitlles 2' },
-        { src: '/Espai/Habitacio10.jpg', alt: 'Antigua habitació HD Riudebitlles 3' },
     ];
 
     return (
@@ -28,13 +19,13 @@ export default function Espai() {
                 </h1>
                 <div className="flex flex-col gap-6 text-xl leading-relaxed text-gray-600 font-light">
                     <p>
-                        L'espai actual sorgeix de la transformació de l'antic HD Riudebitlles, un projecte que durant més de quinze anys va combinar allotjament i art contemporani al centre històric de Sant Pere de Riudebitlles.
+                        La casa-taller del pintor David Ribas és també sala d'exposicions i punt de trobada amb la creació, les rutes del vi i els molins paperers. Del 2010 al 2025 va ser, a més, un hotel de tres habitacions que combinava art i allotjament.
                     </p>
                     <p>
-                        Situat en un entorn marcat per la tradició paperera i el paisatge vitivinícola del Penedès, l'espai manté un fort vincule amb els antics molins paperers del riu Riudebitlles.
+                        En un entorn rural de vinyes i camps, Sant Pere de Riudebitlles és un municipi de tradició industrial paperera des del segle XVIII. La casa es troba en un conjunt de cinc molins paperers, patrimoni industrial de la vila.
                     </p>
                     <p>
-                        Avui es redefineix com a estudi i centre de producció artística, un lloc de treball i reflexió on la memòria industrial, els grafits i el territori continuen essent font d'inspiració.
+                        Situada al nucli històric de la població, sobre la riera que dona el nom al lloc, mira al barri de l'Altra Banda, a la solana.
                     </p>
                 </div>
             </section>
@@ -42,16 +33,6 @@ export default function Espai() {
             {/* Main Espai Gallery */}
             <section className="flex flex-col gap-8 w-full">
                 <GalleryGrid images={espaiImages} />
-            </section>
-
-            {/* Historical Habitacio Gallery */}
-            <section className="flex flex-col gap-8 w-full border-t border-gray-100 pt-16">
-                <div className="max-w-3xl text-left w-full mx-auto md:mx-0">
-                    <h2 className="text-2xl font-light text-gray-500 tracking-wide uppercase">
-                        Antigues habitacions de l'HD Riudebitlles
-                    </h2>
-                </div>
-                <GalleryGrid images={habitacioImages} />
             </section>
         </div>
     );

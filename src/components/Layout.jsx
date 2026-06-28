@@ -11,7 +11,7 @@ export default function Layout() {
                     <nav className="flex gap-6 text-sm uppercase tracking-wider text-gray-600">
                         <Link to="/" className="hover:text-black transition-colors">Inici</Link>
                         <Link to="/espai" className="hover:text-black transition-colors">L'Espai</Link>
-                        <Link to="/obres" className="hover:text-black transition-colors">Obres</Link>
+                        <Link to="/treball" className="hover:text-black transition-colors">Treball</Link>
                         <Link to="/publicacions" className="hover:text-black transition-colors">Publicacions</Link>
                         <Link to="/contacte" className="hover:text-black transition-colors">Contacte</Link>
                     </nav>

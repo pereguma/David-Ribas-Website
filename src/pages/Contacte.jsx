@@ -14,16 +14,15 @@ export default function Contacte() {
                     <div className="flex flex-col gap-6 font-light text-lg text-gray-700">
                         <div>
                             <p className="font-medium text-black uppercase tracking-wider text-sm mb-1">Email</p>
-                            <a href="mailto:info@hdriudebitlles.com" className="hover:text-black transition-colors">info@hdriudebitlles.com</a>
+                            <a href="mailto:davidribas367@gmail.com" className="hover:text-black transition-colors">davidribas367@gmail.com</a>
                         </div>
                         <div>
                             <p className="font-medium text-black uppercase tracking-wider text-sm mb-1">Telèfon</p>
                             <p>+34 600 531 116</p>
-                            <p>+34 93 899 59 79</p>
                         </div>
                         <div>
                             <p className="font-medium text-black uppercase tracking-wider text-sm mb-1">Adreça</p>
-                            <p>Carrer de Baix, 33</p>
+                            <p>Carrer de Baix, 29-33</p>
                             <p>08776 Sant Pere de Riudebitlles</p>
                             <p>Barcelona</p>
                         </div>
@@ -69,7 +68,7 @@ export default function Contacte() {
                 {/* Map */}
                 <div className="w-full h-[400px] lg:h-full min-h-[400px] bg-gray-50 flex items-center justify-center p-2 border border-gray-100">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.8080614486244!2d1.7011985999999998!3d41.4538965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4666cf3005a39%3A0xc6cb5eb7f74ea71b!2sCarrer%20de%20Baix%2C%2033%2C%2008776%20Sant%20Pere%20de%20Riudebitlles%2C%20Barcelona!5e0!3m2!1sen!2ses!4v1700000000000!5m2!1sen!2ses"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.8080614486244!2d1.7011985999999998!3d41.4538965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4666cf3005a39%3A0xc6cb5eb7f74ea71b!2sCarrer%20de%20Baix%2C%2029-33%2C%2008776%20Sant%20Pere%20de%20Riudebitlles%2C%20Barcelona!5e0!3m2!1sen!2ses!4v1700000000000!5m2!1sen!2ses"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

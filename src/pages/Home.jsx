@@ -17,15 +17,12 @@ export default function Home() {
                     <p className="text-xl md:text-2xl text-gray-600 font-light">
                         Pintor i creador visual contemporani.
                     </p>
-                    <p className="text-xs tracking-[0.2em] uppercase text-gray-400">
-                        Nota de prova: web actualitzada des de l'escriptori.
-                    </p>
                 </div>
                 <a
-                    href="/obres"
+                    href="/treball"
                     className="mt-4 px-8 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-gray-800 transition-colors"
                 >
-                    → Veure obres
+                    → Veure treball
                 </a>
             </section>
 
@@ -33,16 +30,22 @@ export default function Home() {
             <section className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
                 <div className="flex flex-col gap-6 text-gray-700 leading-relaxed font-light text-lg">
                     <p>
-                        David Ribas Boldú (Barcelona, 1957) inicia la seva trajectòria artística als anys vuitanta, després de formar-se en pintura i revestiments murals.
+                        David Ribas (Barcelona, 1957) va estudiar pintura i revestiments murals.
                     </p>
                     <p>
-                        Des de 1980 es dedica professionalment a la creació pictòrica, desenvolupant el seu treball entre Catalunya i diverses estades creatives a Marràqueix, Mallorca, Japó i Sardenya.
+                        Des del 1980 es dedica a la pintura, feina que ha compaginat amb la docència, l'activisme cultural i, del 2010 al 2025, la gestió d'HD Riudebitlles, un petit hotel de tres habitacions i centre dinamitzador de l'art contemporani.
                     </p>
                     <p>
-                        La seva obra explora la relació entre pintura, text i memòria. En els darrers anys ha aprofundit en l'estudi dels grafits com a expressió artística i document històric, reivindicant el valor cultural de les inscripcions populars.
+                        Pel seu treball artístic ha fet estades de treball al Marroc, Mallorca, Japó i Sardenya, que ha compaginat amb la investigació artística al seu estudi riudebitllenc.
                     </p>
                     <p>
-                        Ha estat membre fundador del col·lectiu Ras-El-Hanut i impulsor de Riudebitlles Territori d'Art, contribuint activament a la dinamització cultural del territori.
+                        Ha fet exposicions individuals a Tokyo, les Franqueses, l'Alzina, Sant Sadurní d'Anoia, l'Alguer (Sardenya), Tremp, Barcelona, Girona, Tànger, Tetuan, Mallorca, Vilafranca del Penedès, Capellades i Saint Paul de Vence (França) i col·lectives a Barcelona, Berlin, Béziers, Nîmes, Toulouse, Lisboa, Rabat, Tetuan, Tànger, Brussel·les i Estrasburg, entre d'altres.
+                    </p>
+                    <p>
+                        És membre fundador del col·lectiu d'artistes plàstics Ras El-Hanut (1994) i del col·lectiu Riudebitlles Territori d'Art (2015).
+                    </p>
+                    <p>
+                        Des de la seva casa-taller a Riudebitlles contribueix al desplegament de l'activitat artística i cultural al municipi i el seu entorn.
                     </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -70,7 +73,7 @@ export default function Home() {
             </section>
 
             {/* Curriculum */}
-            <section className="max-w-3xl mx-auto w-full flex flex-col gap-12 text-sm leading-loose text-gray-700 mt-12 mb-24 font-light">
+            <section className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-sm leading-loose text-gray-700 mt-12 mb-24 font-light">
                 <div className="border-b border-gray-200 pb-8 text-center">
                     <h2 className="text-xl font-medium tracking-widest text-black mb-2 uppercase">David Ribas Boldú</h2>
                     <p>Barcelona, 1957. Estudis de pintura i revestiments murals.</p>
@@ -80,10 +83,11 @@ export default function Home() {
                     <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Últimes exposicions</h3>
 
                     <ul className="flex flex-col gap-2">
+                        <li><strong>2026</strong> – "Els grafits als molins paperers". Museu Molí Paperer. Capellades (Barcelona)</li>
                         <li><strong>2023</strong> – "kilometrezero". Molí de cal Xerta. Riudebitlles (Barcelona)</li>
-                        <li><strong>2021</strong> – "Pintura i grafit". Galeria Artèria. Igualada (Barcelona).</li>
+                        <li><strong>2021</strong> – "Pintura i grafit". Galeria Artèria. Igualada (Barcelona)</li>
                         <li><strong>2020</strong> – "Sempre pot passar de tot". Galeria Artemisia. Les Franqueses del Vallès (Barcelona)</li>
-                        <li><strong>2020</strong> – "Pintura i paper". Centre Cultural Església Vella. Mont-roig del Camp (Tarragona).</li>
+                        <li><strong>2020</strong> – "Pintura i paper". Centre Cultural Església Vella. Mont-roig del Camp (Tarragona)</li>
                         <li><strong>2019</strong> – Pintures. Cava Jaume Giró i Giró. Sant Sadurní d'Anoia (Barcelona)</li>
                         <li><strong>2019</strong> – "L'art és una venjança". Grafits i graffiti. Biblioteca Ramon Bosch de Noya Centre Cultural. Sant Sadurní d'Anoia (Barcelona)</li>
                         <li><strong>2018</strong> – "L'art és una venjança. Grafits 1894-1960. Graffiti 2010-2018". Museu Molí Paperer. Capellades (Barcelona)</li>
@@ -116,7 +120,7 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="flex flex-col gap-4 mt-8">
+                <div className="flex flex-col gap-4 mt-4">
                     <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Exposicions col·lectives</h3>
 
                     <ul className="flex flex-col gap-2">
@@ -141,7 +145,7 @@ export default function Home() {
                         <li><strong>2016</strong> – "Riudebitlles Territori d'Art". Cava Jaume Giró i Giró. Sant Sadurní d'Anoia</li>
                         <li><strong>2016</strong> – "25 + 2 Palmadotze. Art, vi i paisatge". Vinseum. Vilafranca del Penedès.</li>
                         <li><strong>2016</strong> – "Pedra". Glop d'art. Sant Joan de Mediona (Barcelona)</li>
-                        <li><strong>2016</strong> – Terra nullius. Col·lectiu Ras El-Hanut. Sala del Portal del Pardo. El Vendrell (Tarragona)</li>
+                        <li><strong>2016</strong> – "Terra nullius". Col·lectiu Ras El-Hanut. Sala del Portal del Pardo. El Vendrell (Tarragona)</li>
                         <li><strong>2015</strong> – "Els colors del vi". Col·lectiu Ardhara. El Vendrell (Tarragona)</li>
                         <li><strong>2015</strong> – "Pedra". Glop d'art. Riudebitlles – Mediona</li>
                         <li><strong>2015</strong> – "Aparador de creadors". Obra de petit format. Galeria Tangram. Barcelona</li>
@@ -179,12 +183,13 @@ export default function Home() {
                 <div className="flex flex-col gap-4 mt-8">
                     <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Accions</h3>
                     <ul className="flex flex-col gap-2">
-                        <li><strong>2006-2007</strong> – "Lectura d'Omar Khayyam". Grafits.<br />
+                        <li><strong>2006-2008</strong> – "Lectura d'Omar Khayyam". Grafits<br />
                             Celler Pardas – Torrelavit<br />
                             Vinseum (Museu de les Cultures del Vi) – Vilafranca del Penedès<br />
                             Centre L'Escocesa – Barcelona
                         </li>
-                        <li><strong>2015</strong> – Grafiti. Embarrat. Tàrrega</li>
+                        <li><strong>2015</strong> – "Grafiti". Embarrat. Tàrrega</li>
+                        <li><strong>2015</strong> – "Transeünts". Treballs sobre paper i grafits sobre fotografia i pedres. Cult Gallery. L'Alguer (Sardenya)</li>
                         <li><strong>2019</strong> – Acció artística "Omar Khayyam i les quartetes del vi, el beure i el viure". Nit de la pansa blanca. Alella</li>
                         <li><strong>2021</strong> – Empaperament del molí paperer de cal Xerta. Sant Pere de Riudebitlles</li>
                     </ul>
@@ -193,14 +198,14 @@ export default function Home() {
                 <div className="flex flex-col gap-4 mt-8 border-t border-gray-200 pt-8">
                     <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Publicacions</h3>
                     <ul className="flex flex-col gap-2 mb-8">
-                        <li><strong>2025</strong> – Els grafits dels molins paperers. Eumo Editorial. Museu de la Ciència i de la Tècnica de Catalunya, Museu Molí Paperer de Capellades.</li>
+                        <li><strong>2025</strong> – Els grafits dels molins paperers. Coedició d'Eumo Editorial, Museu de la Ciència i de la Tècnica de Catalunya i Museu Molí Paperer de Capellades. Col·lecció "La Fàbrica", núm. 3.</li>
                     </ul>
 
                     <div className="text-center opacity-80 pt-8 border-t border-gray-100">
                         <p className="font-medium text-black">David Ribas</p>
                         <p>Carrer de Baix, 29-33</p>
                         <p>08776 Riudebitlles</p>
-                        <p>info@hdriudebitlles.com</p>
+                        <p>davidribas367@gmail.com</p>
                     </div>
                 </div>
             </section>

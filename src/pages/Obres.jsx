@@ -30,19 +30,26 @@ export default function Obres() {
             { src: '/Obres/Fotografia/Fotografia 2.png', alt: 'Fotografia 2' },
             { src: '/Obres/Fotografia/Fotografia 3.png', alt: 'Fotografia 3' },
             { src: '/Obres/Fotografia/Fotografia 4.png', alt: 'Fotografia 4' },
-        ],
-        altres: []
+        ]
     };
 
     const tabs = [
         { id: 'pintura', label: 'Pintura' },
         { id: 'grafit', label: 'Grafit' },
         { id: 'fotografia', label: 'Fotografia' },
-        { id: 'altres', label: 'Altres' },
     ];
 
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-16 pt-8">
+            <section className="max-w-3xl mx-auto text-center flex flex-col gap-6">
+                <h1 className="text-4xl md:text-5xl font-bold tracking-tight uppercase">
+                    Treball
+                </h1>
+                <p className="text-xl leading-relaxed text-gray-600 font-light">
+                    El meu treball, de manera conscient i racional, és un neguit, un trànsit volgudament nòmada i a la deriva. Busco, depurant i sintetitzant constantment, formes i referències en l'espai. Com un joc. Ja sigui en dibuix, en pintura o en un text a la manera de grafit.
+                </p>
+            </section>
+
             {/* Category Navigation */}
             <nav className="flex flex-wrap justify-center gap-8 border-b border-gray-200 pb-4">
                 {tabs.map((tab) => (
@@ -61,13 +68,7 @@ export default function Obres() {
 
             {/* Active Gallery */}
             <div className="w-full min-h-[50vh]">
-                {categories[activeTab].length > 0 ? (
-                    <GalleryGrid images={categories[activeTab]} />
-                ) : (
-                    <div className="w-full h-full flex items-center justify-center text-gray-400 font-light tracking-widest uppercase">
-                        Pròximament
-                    </div>
-                )}
+                <GalleryGrid images={categories[activeTab]} />
             </div>
         </div>
     );
