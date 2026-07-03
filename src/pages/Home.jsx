@@ -31,13 +31,13 @@ export default function Home() {
                     to="/treball"
                     className="mt-4 px-8 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-gray-800 transition-colors"
                 >
-                    → Treball
+                    → Treballs
                 </Link>
             </section>
 
             {/* Biography Section */}
             <section className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
-                <div className="flex flex-col gap-6 text-gray-700 leading-relaxed font-light text-lg">
+                <div className="flex flex-col gap-6 text-gray-700 leading-relaxed font-light text-lg text-justify">
                     <p>
                         David Ribas (Barcelona, 1957) va estudiar pintura i revestiments murals.
                     </p>
