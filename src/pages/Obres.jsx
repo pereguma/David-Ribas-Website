@@ -10,7 +10,7 @@ export default function Obres() {
             { src: '/Obres/Pintura/Pintura2.JPG', alt: 'Pintura 2' },
             { src: '/Obres/Pintura/Pintura3.JPG', alt: 'Pintura 3' },
             { src: '/Obres/Pintura/Pintura4.jpeg', alt: 'Pintura 4' },
-            { src: '/Obres/Pintura/Pintura5', alt: 'Pintura 5' },
+            { src: '/Obres/Pintura/Pintura5.jpeg', alt: 'Pintura 5' },
             { src: '/Obres/Pintura/Pintura6.jpeg', alt: 'Pintura 6' },
             { src: '/Obres/Pintura/Pintura7.jpeg', alt: 'Pintura 7' },
             { src: '/Obres/Pintura/Pintura8.jpeg', alt: 'Pintura 8' },

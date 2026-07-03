@@ -36,7 +36,7 @@ export default function Publicacions() {
                         — Joan Maria Minguet
                     </p>
                     <p>
-                        <em>Els grafits dels molins paperers</em> és el 3r número de la col·lecció "La Fàbrica", una coedició d'EUMO Editorial, el mNACTEC i el Museu Molí Paperer de Capellades, que té per objectiu recuperar i posar en valor el patrimoni industrial del paper.
+                        <em>Els grafits dels molins paperers</em> és el 3r número de la col·lecció La Fàbrica, una coedició d'EUMO Editorial, el mNACTEC i el Museu Molí Paperer de Capellades, que té per objectiu recuperar i posar en valor el patrimoni industrial del paper.
                     </p>
                 </div>
             </section>
