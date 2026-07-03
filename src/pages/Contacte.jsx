@@ -1,6 +1,13 @@
+import Seo from '../components/Seo';
+
 export default function Contacte() {
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-16 pt-8 max-w-6xl mx-auto w-full">
+            <Seo
+                title="Contacte — David Ribas"
+                description="Contacta amb l'estudi de David Ribas: Carrer de Baix, 29-33, Sant Pere de Riudebitlles (Barcelona). davidribas367@gmail.com."
+                path="/contacte"
+            />
             <div className="text-center">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-black uppercase mb-4">
                     Contacte

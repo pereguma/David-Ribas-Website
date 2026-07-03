@@ -1,12 +1,21 @@
+import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
+
 export default function Home() {
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-24">
+            <Seo
+                title="David Ribas — Pintor"
+                description="David Ribas (Barcelona, 1957), pintor. Obra, exposicions, publicacions i casa-taller a Sant Pere de Riudebitlles."
+                path="/"
+            />
             {/* Hero Section */}
             <section className="flex flex-col items-center text-center gap-8 pt-8">
                 <div className="w-full max-w-4xl aspect-[16/9] overflow-hidden bg-gray-50 flex items-center justify-center">
                     <img
                         src="/Artista/Artista1.jpg"
-                        alt="David Ribas"
+                        alt="David Ribas, pintor"
+                        fetchPriority="high"
                         className="w-full h-full object-cover"
                     />
                 </div>
@@ -15,20 +24,20 @@ export default function Home() {
                         David Ribas
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-600 font-light">
-                        Pintor i creador visual contemporani.
+                        Pintor
                     </p>
                 </div>
-                <a
-                    href="/treball"
+                <Link
+                    to="/treball"
                     className="mt-4 px-8 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-gray-800 transition-colors"
                 >
-                    → Veure treball
-                </a>
+                    → Treballs
+                </Link>
             </section>
 
             {/* Biography Section */}
             <section className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
-                <div className="flex flex-col gap-6 text-gray-700 leading-relaxed font-light text-lg">
+                <div className="flex flex-col gap-6 text-gray-700 leading-relaxed font-light text-lg text-justify">
                     <p>
                         David Ribas (Barcelona, 1957) va estudiar pintura i revestiments murals.
                     </p>
@@ -49,10 +58,10 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                    <img src="/Artista/Artista2.jpg" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
-                    <img src="/Artista/Artista3.webp" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
-                    <img src="/Artista/Artista4.jpeg" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
-                    <img src="/Artista/Artista5.jpg" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista2.jpg" alt="Retrat de David Ribas, 1" loading="lazy" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista3.webp" alt="Retrat de David Ribas, 2" loading="lazy" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista4.jpeg" alt="Retrat de David Ribas, 3" loading="lazy" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista5.jpg" alt="Retrat de David Ribas, 4" loading="lazy" className="w-full aspect-square object-cover" />
                 </div>
             </section>
 
@@ -75,12 +84,12 @@ export default function Home() {
             {/* Curriculum */}
             <section className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-sm leading-loose text-gray-700 mt-12 mb-24 font-light">
                 <div className="border-b border-gray-200 pb-8 text-center">
-                    <h2 className="text-xl font-medium tracking-widest text-black mb-2 uppercase">David Ribas Boldú</h2>
+                    <h2 className="text-xl font-medium tracking-widest text-black mb-2 uppercase">David Ribas</h2>
                     <p>Barcelona, 1957. Estudis de pintura i revestiments murals.</p>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Últimes exposicions</h3>
+                    <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Exposicions</h3>
 
                     <ul className="flex flex-col gap-2">
                         <li><strong>2026</strong> – "Els grafits als molins paperers". Museu Molí Paperer. Capellades (Barcelona)</li>
@@ -99,7 +108,7 @@ export default function Home() {
                         <li><strong>2012</strong> – "Grafits". HD Riudebitlles. Sant Pere de Riudebitlles</li>
                         <li><strong>2011</strong> – "Tokyo-Osaka-Riudebitlles. Apunts". HD Riudebitlles. Riudebitlles (Barcelona)</li>
                         <li><strong>2011</strong> – "Riudebitlles". Galeria Brocken. Tòquio (Japó)</li>
-                        <li><strong>2011</strong> – "Apunts". L'Alzina de Ribelles (Lleida).</li>
+                        <li><strong>2011</strong> – "Apunts". L'Alzina de Ribelles (Lleida)</li>
                         <li><strong>2011</strong> – Galeria Paqui Delgado. Sant Sadurní d'Anoia</li>
                         <li><strong>2008</strong> – "Cap novetat de Reykjavíc?" Arthouse. L'Alguer (Sardenya, Itàlia)</li>
                         <li><strong>2007</strong> – Art Bruc. El Bruc (Barcelona)</li>
@@ -120,8 +129,8 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="flex flex-col gap-4 mt-4">
-                    <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Exposicions col·lectives</h3>
+                <div className="flex flex-col gap-4">
+                    <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Mostres col·lectives</h3>
 
                     <ul className="flex flex-col gap-2">
                         <li><strong>2026</strong> – "Perspectives". Molí de cal Xerta. Riudebitlles (Barcelona)</li>
@@ -130,30 +139,30 @@ export default function Home() {
                         <li><strong>2025</strong> – Homenatge al mestre Tsubota. Osaka (Japó)</li>
                         <li><strong>2023</strong> – Errant. Itineraris d'art i pensament. El Cogul (Lleida)</li>
                         <li><strong>2022</strong> – "Horitzons". Galeria Artemisia. Les Franqueses del Vallès (Barcelona)</li>
-                        <li><strong>2021</strong> – 33è i últim Firart Penedès. Vilafranca del Penedès.</li>
+                        <li><strong>2021</strong> – 33è i últim Firart Penedès. Vilafranca del Penedès</li>
                         <li><strong>2020</strong> – "Clucart (2013-2017). En record d'Alba Vilamajó". Museu Comarcal d'Urgell. Tàrrega (Lleida).</li>
-                        <li><strong>2020</strong> – Art al carrer. Sant Pere de Riudebitlles.</li>
+                        <li><strong>2020</strong> – Art al carrer. Sant Pere de Riudebitlles</li>
                         <li><strong>2019</strong> – "Una nit a Tunísia, a la manera de..." Innocents 2019. HD Riudebitlles. Sant Pere de Riudebitlles</li>
                         <li><strong>2019</strong> – Glop d'art. Mediona-Riudebitlles</li>
                         <li><strong>2018</strong> – HD Riudebitlles. Sant Pere de Riudebitlles</li>
                         <li><strong>2017</strong> – "Cultura més que mai". Innocents 2017. HD Riudebitlles. Sant Pere de Riudebitlles</li>
                         <li><strong>2017</strong> – "In vino veritas". Col·lectiu Ardhara. Centre d'Art Contemporani La Sala. Vilanova i la Geltrú (Barcelona)</li>
-                        <li><strong>2017</strong> – "Out of time". Albareh Art Gallery. Bahrain.</li>
+                        <li><strong>2017</strong> – "Out of time". Albareh Art Gallery. Bahrain</li>
                         <li><strong>2017</strong> – "Bee my muse". L'art et l'abeille. Ferme d'Icart. Montels (Arieja, França)</li>
                         <li><strong>2016-2017</strong> – "Postals del Riudebitlles". HD Riudebitlles. Sant Pere de Riudebitlles</li>
-                        <li><strong>2016</strong> – Apartament 33. Calafell.</li>
+                        <li><strong>2016</strong> – Apartament 33. Calafell (Tarragona)</li>
                         <li><strong>2016</strong> – "Riudebitlles Territori d'Art". Cava Jaume Giró i Giró. Sant Sadurní d'Anoia</li>
                         <li><strong>2016</strong> – "25 + 2 Palmadotze. Art, vi i paisatge". Vinseum. Vilafranca del Penedès.</li>
                         <li><strong>2016</strong> – "Pedra". Glop d'art. Sant Joan de Mediona (Barcelona)</li>
                         <li><strong>2016</strong> – "Terra nullius". Col·lectiu Ras El-Hanut. Sala del Portal del Pardo. El Vendrell (Tarragona)</li>
                         <li><strong>2015</strong> – "Els colors del vi". Col·lectiu Ardhara. El Vendrell (Tarragona)</li>
-                        <li><strong>2015</strong> – "Pedra". Glop d'art. Riudebitlles – Mediona</li>
+                        <li><strong>2015</strong> – "Pedra". Glop d'art. Riudebitlles i Mediona</li>
                         <li><strong>2015</strong> – "Aparador de creadors". Obra de petit format. Galeria Tangram. Barcelona</li>
                         <li><strong>2015</strong> – "Terra nullius". Col·lectiu Ras El-Hanut. Capella de Sant Joan. Vilafranca del Penedès</li>
                         <li><strong>2015</strong> – "Grafits". Embarrat. Tàrrega.</li>
                         <li><strong>2014</strong> – "No és broma!" HD Riudebitlles. Sant Pere de Riudebitlles</li>
                         <li><strong>2014</strong> – Ardhara. Barri Vell. Sant Pere de Riudebitlles</li>
-                        <li><strong>2014</strong> – "25 Palmadotze. Art, vi i paisatge". Galeria Palmadotze. Santa Margarida i els Monjos (Barcelona).</li>
+                        <li><strong>2014</strong> – "25 Palmadotze. Art, vi i paisatge". Galeria Palmadotze. Santa Margarida i els Monjos (Barcelona)</li>
                         <li><strong>2014</strong> – "Café des Voyageurs". Museo de las Murallas Reales. Ceuta (Marroc)</li>
                         <li><strong>2014</strong> – Instituto Cervantes. Tetuan i Tanger (Marroc)</li>
                         <li><strong>2014</strong> – "Cridats per Vinyoli". Exposició sobre poemes de Joan Vinyoli. Santa Coloma de Farners, Barcelona, Begur i Vilafranca del Penedès</li>
@@ -184,9 +193,9 @@ export default function Home() {
                     <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Accions</h3>
                     <ul className="flex flex-col gap-2">
                         <li><strong>2006-2008</strong> – "Lectura d'Omar Khayyam". Grafits<br />
-                            Celler Pardas – Torrelavit<br />
-                            Vinseum (Museu de les Cultures del Vi) – Vilafranca del Penedès<br />
-                            Centre L'Escocesa – Barcelona
+                            Celler Pardas. Torrelavit (2006)<br />
+                            Vinseum. Museu de les Cultures del Vi. Vilafranca del Penedès (2007)<br />
+                            Centre L'Escocesa. Barcelona (2008)
                         </li>
                         <li><strong>2015</strong> – "Grafiti". Embarrat. Tàrrega</li>
                         <li><strong>2015</strong> – "Transeünts". Treballs sobre paper i grafits sobre fotografia i pedres. Cult Gallery. L'Alguer (Sardenya)</li>
@@ -198,7 +207,7 @@ export default function Home() {
                 <div className="flex flex-col gap-4 mt-8 border-t border-gray-200 pt-8">
                     <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Publicacions</h3>
                     <ul className="flex flex-col gap-2 mb-8">
-                        <li><strong>2025</strong> – Els grafits dels molins paperers. Coedició d'Eumo Editorial, Museu de la Ciència i de la Tècnica de Catalunya i Museu Molí Paperer de Capellades. Col·lecció "La Fàbrica", núm. 3.</li>
+                        <li><strong>2025</strong> – <em>Els grafits dels molins paperers</em>. Coedició d'Eumo Editorial, Museu de la Ciència i de la Tècnica de Catalunya i Museu Molí Paperer de Capellades. Col·lecció "La Fàbrica", núm. 3.</li>
                     </ul>
 
                     <div className="text-center opacity-80 pt-8 border-t border-gray-100">
