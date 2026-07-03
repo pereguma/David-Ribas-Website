@@ -1,17 +1,23 @@
 import GalleryGrid from '../components/GalleryGrid';
+import Seo from '../components/Seo';
 
 export default function Espai() {
     const espaiImages = [
-        { src: '/Espai/Espai1.jpg', alt: 'Espai David Ribas 1' },
-        { src: '/Espai/Espai2.jpg', alt: 'Espai David Ribas 2' },
-        { src: '/Espai/Espai3.jpg', alt: 'Espai David Ribas 3' },
-        { src: '/Espai/Espai4.jpg', alt: 'Espai David Ribas 4' },
-        { src: '/Espai/Espai5.jpg', alt: 'Espai David Ribas 8' },
-        { src: '/Espai/Espai6.jpg', alt: 'Espai David Ribas 9' },
+        { src: '/Espai/Espai1.jpg', alt: "La casa-taller de David Ribas a Sant Pere de Riudebitlles, 1" },
+        { src: '/Espai/Espai2.jpg', alt: "La casa-taller de David Ribas a Sant Pere de Riudebitlles, 2" },
+        { src: '/Espai/Espai3.jpg', alt: "La casa-taller de David Ribas a Sant Pere de Riudebitlles, 3" },
+        { src: '/Espai/Espai4.jpg', alt: "La casa-taller de David Ribas a Sant Pere de Riudebitlles, 4" },
+        { src: '/Espai/Espai5.jpg', alt: "La casa-taller de David Ribas a Sant Pere de Riudebitlles, 5" },
+        { src: '/Espai/Espai6.jpg', alt: "La casa-taller de David Ribas a Sant Pere de Riudebitlles, 6" },
     ];
 
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-16 md:gap-24 pt-8">
+            <Seo
+                title="L'Espai — David Ribas"
+                description="La casa-taller del pintor David Ribas a Sant Pere de Riudebitlles: sala d'exposicions i punt de trobada amb la creació, les rutes del vi i els molins paperers."
+                path="/espai"
+            />
             {/* Introduction */}
             <section className="max-w-3xl mx-auto flex flex-col gap-8 text-center bg-white px-4">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight uppercase">

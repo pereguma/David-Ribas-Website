@@ -31,11 +31,16 @@ Portfolio del pintor David Ribas (davidribas367@gmail.com). SPA estática sin ba
 - Las listas de obras/imágenes se definen como arrays dentro de cada página (p. ej. `categories` en `Obres.jsx`).
 - Los cambios de contenido (textos, CV) suelen llegar de la correctora (Pilar) en catalán; aplicarlos literalmente, incluida la puntuación.
 
+## SEO
+
+- La URL base (`https://david-ribas-website.vercel.app`) está en `src/components/Seo.jsx` (`BASE_URL`), `public/robots.txt`, `public/sitemap.xml` e `index.html`. **Al pasar a dominio propio hay que cambiarla en los cuatro sitios.**
+- Cada página monta `<Seo title description path>` que actualiza title/description/canonical/OG por ruta (SPA, sin SSR).
+- `index.html` lleva los OG/Twitter/JSON-LD (Person) estáticos y el favicon `public/favicon.svg`.
+
 ## Estado / pendientes
 
 - Despliegue: Vercel (entorno de pruebas). Aún no está en producción.
 - El formulario de contacto no envía nada todavía (pendiente conectar a un servicio).
 - Imágenes sin optimizar (varios JPEG/PNG de 2-3 MB) — pendiente conversión a WebP.
-- Falta favicon propio y SEO completo (Open Graph, sitemap).
-- Pendiente añadir la foto de la portada del libro en `Publicacions.jsx` (bajo el título) cuando se reciba el archivo.
-- `Pintura5.jpeg` es de muy baja resolución (205×198) — pedir original mejor.
+- `Pintura5.jpeg` y varias pinturas más son de muy baja resolución (~205 px) — el usuario decidió dejarlo así de momento (2026-07-03).
+- La "portada" de Publicacions es la foto de los grafitos del Molí Vinyals sin el texto del título del libro — confirmar con Pilar si es la portada real.

@@ -1,14 +1,21 @@
 import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
 
 export default function Home() {
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-24">
+            <Seo
+                title="David Ribas — Pintor i creador visual"
+                description="David Ribas (Barcelona, 1957), pintor i creador visual contemporani. Obra, exposicions, publicacions i casa-taller a Sant Pere de Riudebitlles."
+                path="/"
+            />
             {/* Hero Section */}
             <section className="flex flex-col items-center text-center gap-8 pt-8">
                 <div className="w-full max-w-4xl aspect-[16/9] overflow-hidden bg-gray-50 flex items-center justify-center">
                     <img
                         src="/Artista/Artista1.jpg"
-                        alt="David Ribas"
+                        alt="David Ribas, pintor i creador visual"
+                        fetchPriority="high"
                         className="w-full h-full object-cover"
                     />
                 </div>
@@ -51,10 +58,10 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                    <img src="/Artista/Artista2.jpg" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
-                    <img src="/Artista/Artista3.webp" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
-                    <img src="/Artista/Artista4.jpeg" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
-                    <img src="/Artista/Artista5.jpg" alt="David Ribas Portrait" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista2.jpg" alt="Retrat de David Ribas, 1" loading="lazy" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista3.webp" alt="Retrat de David Ribas, 2" loading="lazy" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista4.jpeg" alt="Retrat de David Ribas, 3" loading="lazy" className="w-full aspect-square object-cover" />
+                    <img src="/Artista/Artista5.jpg" alt="Retrat de David Ribas, 4" loading="lazy" className="w-full aspect-square object-cover" />
                 </div>
             </section>
 

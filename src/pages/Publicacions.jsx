@@ -1,12 +1,18 @@
 import GalleryGrid from '../components/GalleryGrid';
+import Seo from '../components/Seo';
 
 export default function Publicacions() {
-    const publicacionsImages = [
-        { src: '/Publicacions/Molins paperers Imatge.png', alt: 'Els grafits dels molins paperers' }
+    const portadaImages = [
+        { src: '/Publicacions/portada-llibre.jpg', alt: "Portada del llibre 'Els grafits dels molins paperers', amb grafits del Molí Vinyals de Torrelavit" }
     ];
 
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-16 pt-8 max-w-4xl mx-auto">
+            <Seo
+                title="Els grafits dels molins paperers — David Ribas"
+                description="El llibre 'Els grafits dels molins paperers' de David Ribas, amb pròleg de Joan M. Minguet. Coedició d'Eumo Editorial, el mNACTEC i el Museu Molí Paperer de Capellades."
+                path="/publicacions"
+            />
             <section className="flex flex-col gap-8">
                 <div className="text-center flex flex-col gap-4">
                     <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-black uppercase">
@@ -16,6 +22,11 @@ export default function Publicacions() {
                         de David Ribas<br />
                         Amb pròleg de Joan M. Minguet
                     </h2>
+                </div>
+
+                <div className="w-full mt-4">
+                    <GalleryGrid images={portadaImages} />
+                    <p className="text-center text-sm text-gray-500 font-light mt-4">Molí Vinyals. Torrelavit</p>
                 </div>
 
                 <div className="flex flex-col gap-6 text-lg leading-relaxed text-gray-700 font-light mt-8 px-4">
@@ -41,10 +52,6 @@ export default function Publicacions() {
                 </div>
             </section>
 
-            <section className="w-full mt-8">
-                <GalleryGrid images={publicacionsImages} />
-                <p className="text-center text-sm text-gray-500 font-light mt-4">Molí Vinyals. Torrelavit</p>
-            </section>
         </div>
     );
 }

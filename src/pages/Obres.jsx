@@ -1,35 +1,36 @@
 import { useState } from 'react';
 import GalleryGrid from '../components/GalleryGrid';
+import Seo from '../components/Seo';
 
 export default function Obres() {
     const [activeTab, setActiveTab] = useState('pintura');
 
     const categories = {
         pintura: [
-            { src: '/Obres/Pintura/Pintura1.jpg', alt: 'Pintura 1' },
-            { src: '/Obres/Pintura/Pintura2.JPG', alt: 'Pintura 2' },
-            { src: '/Obres/Pintura/Pintura3.JPG', alt: 'Pintura 3' },
-            { src: '/Obres/Pintura/Pintura4.jpeg', alt: 'Pintura 4' },
-            { src: '/Obres/Pintura/Pintura5.jpeg', alt: 'Pintura 5' },
-            { src: '/Obres/Pintura/Pintura6.jpeg', alt: 'Pintura 6' },
-            { src: '/Obres/Pintura/Pintura7.jpeg', alt: 'Pintura 7' },
-            { src: '/Obres/Pintura/Pintura8.jpeg', alt: 'Pintura 8' },
-            { src: '/Obres/Pintura/Pintura9.jpeg', alt: 'Pintura 9' },
-            { src: '/Obres/Pintura/Pintura10.jpeg', alt: 'Pintura 10' },
-            { src: '/Obres/Pintura/Pintura11.jpeg', alt: 'Pintura 11' },
-            { src: '/Obres/Pintura/Pintura12.jpeg', alt: 'Pintura 12' },
-            { src: '/Obres/Pintura/Pintura13.jpeg', alt: 'Pintura 13' },
+            { src: '/Obres/Pintura/Pintura1.jpg', alt: 'Pintura de David Ribas, 1' },
+            { src: '/Obres/Pintura/Pintura2.JPG', alt: 'Pintura de David Ribas, 2' },
+            { src: '/Obres/Pintura/Pintura3.JPG', alt: 'Pintura de David Ribas, 3' },
+            { src: '/Obres/Pintura/Pintura4.jpeg', alt: 'Pintura de David Ribas, 4' },
+            { src: '/Obres/Pintura/Pintura5.jpeg', alt: 'Pintura de David Ribas, 5' },
+            { src: '/Obres/Pintura/Pintura6.jpeg', alt: 'Pintura de David Ribas, 6' },
+            { src: '/Obres/Pintura/Pintura7.jpeg', alt: 'Pintura de David Ribas, 7' },
+            { src: '/Obres/Pintura/Pintura8.jpeg', alt: 'Pintura de David Ribas, 8' },
+            { src: '/Obres/Pintura/Pintura9.jpeg', alt: 'Pintura de David Ribas, 9' },
+            { src: '/Obres/Pintura/Pintura10.jpeg', alt: 'Pintura de David Ribas, 10' },
+            { src: '/Obres/Pintura/Pintura11.jpeg', alt: 'Pintura de David Ribas, 11' },
+            { src: '/Obres/Pintura/Pintura12.jpeg', alt: 'Pintura de David Ribas, 12' },
+            { src: '/Obres/Pintura/Pintura13.jpeg', alt: 'Pintura de David Ribas, 13' },
         ],
         grafit: [
-            { src: '/Obres/Grafit/Grafit1.JPG', alt: 'Grafit 1' },
-            { src: '/Obres/Grafit/Grafit2.jpg', alt: 'Grafit 2' },
-            { src: '/Obres/Grafit/Grafit3.jpg', alt: 'Grafit 3' },
+            { src: '/Obres/Grafit/Grafit1.JPG', alt: 'Grafit de David Ribas, 1' },
+            { src: '/Obres/Grafit/Grafit2.jpg', alt: 'Grafit de David Ribas, 2' },
+            { src: '/Obres/Grafit/Grafit3.jpg', alt: 'Grafit de David Ribas, 3' },
         ],
         fotografia: [
-            { src: '/Obres/Fotografia/Fotografia 1.png', alt: 'Fotografia 1' },
-            { src: '/Obres/Fotografia/Fotografia 2.png', alt: 'Fotografia 2' },
-            { src: '/Obres/Fotografia/Fotografia 3.png', alt: 'Fotografia 3' },
-            { src: '/Obres/Fotografia/Fotografia 4.png', alt: 'Fotografia 4' },
+            { src: '/Obres/Fotografia/Fotografia 1.png', alt: 'Fotografia de David Ribas, 1' },
+            { src: '/Obres/Fotografia/Fotografia 2.png', alt: 'Fotografia de David Ribas, 2' },
+            { src: '/Obres/Fotografia/Fotografia 3.png', alt: 'Fotografia de David Ribas, 3' },
+            { src: '/Obres/Fotografia/Fotografia 4.png', alt: 'Fotografia de David Ribas, 4' },
         ]
     };
 
@@ -41,6 +42,11 @@ export default function Obres() {
 
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-16 pt-8">
+            <Seo
+                title="Treball — David Ribas"
+                description="Obra de David Ribas: pintura, grafit i fotografia. Formes i referències en l'espai, depurades i sintetitzades constantment."
+                path="/treball"
+            />
             <section className="max-w-3xl mx-auto text-center flex flex-col gap-6">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight uppercase">
                     Treball
