@@ -5,8 +5,8 @@ export default function Home() {
     return (
         <div className="animate-in fade-in duration-700 flex flex-col gap-24">
             <Seo
-                title="David Ribas — Pintor i creador visual"
-                description="David Ribas (Barcelona, 1957), pintor i creador visual contemporani. Obra, exposicions, publicacions i casa-taller a Sant Pere de Riudebitlles."
+                title="David Ribas — Pintor"
+                description="David Ribas (Barcelona, 1957), pintor. Obra, exposicions, publicacions i casa-taller a Sant Pere de Riudebitlles."
                 path="/"
             />
             {/* Hero Section */}
@@ -14,7 +14,7 @@ export default function Home() {
                 <div className="w-full max-w-4xl aspect-[16/9] overflow-hidden bg-gray-50 flex items-center justify-center">
                     <img
                         src="/Artista/Artista1.jpg"
-                        alt="David Ribas, pintor i creador visual"
+                        alt="David Ribas, pintor"
                         fetchPriority="high"
                         className="w-full h-full object-cover"
                     />
@@ -24,14 +24,14 @@ export default function Home() {
                         David Ribas
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-600 font-light">
-                        Pintor i creador visual contemporani.
+                        Pintor
                     </p>
                 </div>
                 <Link
                     to="/treball"
                     className="mt-4 px-8 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-gray-800 transition-colors"
                 >
-                    → Veure treball
+                    → Treball
                 </Link>
             </section>
 
@@ -84,12 +84,12 @@ export default function Home() {
             {/* Curriculum */}
             <section className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-sm leading-loose text-gray-700 mt-12 mb-24 font-light">
                 <div className="border-b border-gray-200 pb-8 text-center">
-                    <h2 className="text-xl font-medium tracking-widest text-black mb-2 uppercase">David Ribas Boldú</h2>
+                    <h2 className="text-xl font-medium tracking-widest text-black mb-2 uppercase">David Ribas</h2>
                     <p>Barcelona, 1957. Estudis de pintura i revestiments murals.</p>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Últimes exposicions</h3>
+                    <h3 className="text-lg font-medium text-black uppercase tracking-wider mb-2">Exposicions</h3>
 
                     <ul className="flex flex-col gap-2">
                         <li><strong>2026</strong> – "Els grafits als molins paperers". Museu Molí Paperer. Capellades (Barcelona)</li>
